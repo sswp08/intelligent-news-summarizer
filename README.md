@@ -22,24 +22,34 @@ intelligent-news-summarizer/
 ├── requirements.txt              # Project dependencies
 ├── README.md                     # Project documentation
 ├── run_tests.sh                  # Script to run tests
+```
 
-***Features***
+## **Features**
 -Fetches news articles from NewsAPI based on a search query.
+
 -Processes and cleans news text data.
+
 -Integrates with an LLM API (e.g., OpenAI) for:
+
     -Article summarization
+    
     -Key points extraction
+    
     -Sentiment analysis
+    
     -Topic classification
+    
 -Provides insights such as trending topics, sentiment tracking, and topic clusters.
+
 -FastAPI endpoint to expose functionality as an API.
 
-***Getting Started***
-Prerequisites
+## **Getting Started**
+
+**Prerequisites**
 -Python 3.8 or later
 -An API key for NewsAPI and OpenAI (or any supported LLM provider).
 
-Setup
+**Setup**
 1. Clone the repository:
 git clone https://github.com/your-username/intelligent-news-summarizer.git
 cd intelligent-news-summarizer
@@ -55,7 +65,7 @@ pip install -r requirements.txt
 
     -Open .env and replace placeholders with your API keys.
 
-Usage
+**Usage**
 1. Run the FastAPI server:
 
 uvicorn news_summarization.api:app --reload
@@ -74,27 +84,38 @@ The API will be accessible at http://127.0.0.1:8000.
 
 
 Example Endpoints
+
 -GET /summarize: Summarizes fetched news articles.
+
 -POST /analyze: Analyzes an article for sentiment, key points, and topic classification.
 
 Environment Variables
+
 Add your API keys to the .env file in the following format:
 
-OPENAI_API_KEY=your_openai_api_key_here
-NEWSDATA_API_KEY=your_newsdata_api_key_here
+OPENAI_API_KEY='your_openai_api_key_here'
+
+NEWSDATA_API_KEY='your_newsdata_api_key_here'
 
 
-Additional Information
+**Additional Information**
+
 Modular Design
+
 The project is structured into distinct modules, each handling a specific part of the pipeline:
 
 -news_api.py: For fetching news articles.
+
 -text_preprocessing.py: For cleaning and preprocessing text data.
+
 -llm_interactions.py: For interacting with the LLM.
+
 -analysis.py: For performing analysis and extracting insights.
+
 -api.py: For exposing functionalities as API endpoints using FastAPI.
 
-Testing
+**Testing**
+
 Unit tests are provided for all core modules in the tests/ directory. Tests can be run using pytest to ensure each module performs as expected.
     
 40b71d2 (Initial commit for Intelligent News Summarizer project)
