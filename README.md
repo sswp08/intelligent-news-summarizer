@@ -97,4 +97,4 @@ The project is structured into distinct modules, each handling a specific part o
 Testing
 Unit tests are provided for all core modules in the tests/ directory. Tests can be run using pytest to ensure each module performs as expected.
     
->>>>>>> 40b71d2 (Initial commit for Intelligent News Summarizer project)
+40b71d2 (Initial commit for Intelligent News Summarizer project)
